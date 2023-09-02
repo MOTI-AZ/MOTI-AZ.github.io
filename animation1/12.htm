@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+	background:#000;
+}
+
+#stage{
+	perspective:500px;
+	width:800px;
+	height:200px;
+	margin:200px auto;
+}
+
+#all{
+
+	animation:anim1 5s infinite linear alternate;
+	transform-style:preserve-3d;
+
+	
+	width:200px;
+	height:200px;
+	margin:auto;	
+}
+
+#all > div{
+	transition:1.5s;
+	position:absolute;
+	
+	width:200px;
+	height:200px;	
+	border:1px solid #ccc;
+	background:rgba(255,255,255,0.8);
+	border-radius:3px;
+	box-shadow:0 0 30px 1px #555 inset,0 0 30px 1px #fff;
+	text-align:center;
+	line-height:200px;
+	font-size:90px;
+	font-family:tahoma;
+	color:#555;
+}
+
+/*  cube   */
+
+#all.cube > div:nth-child(1){
+	transform:rotateY(0) translateZ(100px);
+}
+#all.cube > div:nth-child(2){
+	transform:rotateY(90deg) translateZ(100px);
+}
+#all.cube > div:nth-child(3){
+	transform:rotateY(180deg) translateZ(100px);
+}
+#all.cube > div:nth-child(4){
+	transform:rotateY(-90deg) translateZ(100px);
+}
+#all.cube > div:nth-child(5){
+	transform:rotateX(90deg) translateZ(100px);
+}
+#all.cube > div:nth-child(6){
+	transform:rotateX(-90deg) translateZ(100px);
+}
+
+/*  circle   */
+
+#all.circle > div:nth-child(1){
+	transform:rotateY(0) translateZ(200px);
+}
+#all.circle > div:nth-child(2){
+	transform:rotateY(60deg) translateZ(200px);
+}
+#all.circle > div:nth-child(3){
+	transform:rotateY(120deg) translateZ(200px);
+}
+#all.circle > div:nth-child(4){
+	transform:rotateY(180deg) translateZ(200px);
+}
+#all.circle > div:nth-child(5){
+	transform:rotateY(240deg) translateZ(200px);
+}
+#all.circle > div:nth-child(6){
+	transform:rotateY(300deg) translateZ(200px);
+}
+
+/*  star   */
+
+#all.star > div:nth-child(1){
+	transform:rotateY(0) translateX(200px);
+}
+#all.star > div:nth-child(2){
+	transform:rotateY(60deg) translateX(200px);
+}
+#all.star > div:nth-child(3){
+	transform:rotateY(120deg) translateX(200px);
+}
+#all.star > div:nth-child(4){
+	transform:rotateY(180deg) translateX(200px);
+}
+#all.star > div:nth-child(5){
+	transform:rotateY(240deg) translateX(200px);
+}
+#all.star > div:nth-child(6){
+	transform:rotateY(300deg) translateX(200px);
+}
+
+@keyframes anim1{
+	0%{
+		transform:rotateY(0deg);	
+	}
+	100%{
+		transform:rotateY(360deg);
+	}
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="stage">
+	
+	<div id="all" class="cube"> 
+		<div>  1  </div>
+		<div>  2  </div>		
+		<div>  3  </div>
+		<div>  4  </div>
+		<div>  5  </div>
+		<div>  6  </div>		
+	</div>
+
+</div>
+
+<div id="but" onclick="show()"> تغییر </div>
+
+<script>
+
+f = 0;
+
+function show(){
+	
+	if(f==0){
+		all.className = "circle";
+		f=1;
+	}
+	else if(f==1){
+		all.className = "star";
+		f=2;
+	}	
+	else if(f==2){
+		all.className = "cube";
+		f=0;
+	}		
+}
+
+all.onmousemove = function(e){
+
+	big.style.backgroundPosition = e.pageX 
+
+}
+
+
+</script>
+
+</body>
+
+</html>

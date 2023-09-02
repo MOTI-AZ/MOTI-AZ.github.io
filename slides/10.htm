@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+@font-face{
+	src:url("fonts/Mj flow.ttf");
+	font-family:mj;
+}
+@font-face{
+	src:url("fonts/Mitra.ttf");
+	font-family:mitra;
+}
+
+#accardion{
+	direction:rtl;
+	padding:7px;
+	margin:100px auto;
+	list-style:none;
+	
+	width:400px;
+	font-family:mj;	
+	color:#555;
+	
+	background:rgba(240,240,240,1);
+	border:1px solid #ccc;
+	border-radius:3px;
+	box-shadow:0 0 10px 1px #ccc;
+}
+#accardion > li{
+	background: #fff;
+	padding:7px;
+	margin-bottom: 5px;
+
+}
+
+#accardion > li:last-child{
+	margin: none;
+}
+
+#accardion > li > input{
+	display: none;
+}
+
+#accardion > li > input:checked + label{
+	background-color: orange;
+}
+
+#accardion > li > input:checked ~ .content{
+	height: 100px;
+	margin: 7px;
+}
+
+#accardion > li > label{
+	background: #777 url(/img/02.png) no-repeat 90% 50%;
+	background-size: 20px;
+	color: #fff;
+	padding: 3px 40px 3px 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	
+
+}
+
+#accardion > li > .content{
+	transition: 0.5s;
+	overflow: hidden;
+	height: 0px;
+	
+
+}
+
+#accardion > li > .content > a{
+	display: block;
+	text-align: center;
+	line-height: 10px;
+	font-family: mitra;
+	color: #555;
+	background: rgba(240,240,240,1);
+	margin-top: 2px;
+	padding: 5px 0;
+	text-decoration: none;
+}
+#accardion > li > .content > a:hover{
+	background: rgba(2420,220,220,1);
+	border-right: 5px solid;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<ul id="accardion">
+	<li>
+		<input type="checkbox" id="d0" name="r">
+		<label for="d0"> مدیریت محصولات </label>
+		
+		<div class="content">
+			<a href="#"> افزودن اسلاید </a>
+			<a href="#"> نمایش اسلایدها </a>			
+			<a href="#"> ویرایش اسلاید </a>			
+		</div>
+	</li>	
+	
+	<li>
+		<input type="checkbox" id="d1" name="r">
+		<label for="d1"> مدیریت اسلایدها </label>
+		
+		<div class="content">
+			<a href="#"> افزودن اسلاید </a>
+			<a href="#"> نمایش اسلایدها </a>			
+			<a href="#"> ویرایش اسلاید </a>			
+		</div>
+	</li>	
+	<li>
+		<input type="checkbox" id="d2" name="r">
+		<label for="d2"> مدیریت اسلایدها </label>
+		
+		<div class="content">
+			<a href="#"> افزودن اسلاید </a>
+			<a href="#"> نمایش اسلایدها </a>			
+			<a href="#"> ویرایش اسلاید </a>			
+		</div>
+	</li>	
+	<li>
+		<input type="checkbox" id="d3" name="r">
+		<label for="d3"> مدیریت اسلایدها </label>
+		
+		<div class="content">
+			<a href="#"> افزودن اسلاید </a>
+			<a href="#"> نمایش اسلایدها </a>			
+			<a href="#"> ویرایش اسلاید </a>			
+		</div>
+	</li>	
+	<li>
+		<input type="checkbox" id="d4" name="r">
+		<label for="d4"> مدیریت اسلایدها </label>
+		
+		<div class="content">
+			<a href="#"> افزودن اسلاید </a>
+			<a href="#"> نمایش اسلایدها </a>			
+			<a href="#"> ویرایش اسلاید </a>			
+		</div>
+	</li>	
+
+</ul>
+</body>
+</html>
+
+
