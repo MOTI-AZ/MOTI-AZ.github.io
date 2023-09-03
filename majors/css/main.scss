@@ -1,0 +1,125 @@
+@import 'variable';
+
+@mixin box($width,$height,$color){
+    width:$width;
+    height: $height;
+    background: $color;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    direction: rtl;
+    background: $maincolor;
+    //background: "#{$imagepath}1.jpg";
+}
+
+.main{
+    @include box(600px,400px,#fff);
+    margin: 100px auto;
+    box-shadow: $shadow;
+
+    .header{
+        padding: $padding;
+        background: $darkcolor;
+
+        h1{
+            text-align: center;
+            color:$lightcolor;
+            font-family: $font;
+        }
+    }
+
+
+    .list{
+        list-style: none;
+        width:300px;
+        margin: 50px auto;
+
+        .item{
+            background: $lightcolor;
+            padding: $padding - 5px;
+            margin-bottom: 5px;
+            color:$darkcolor;
+            font-family: $font;
+
+            span{
+                @include box(20px,20px,$darkcolor);
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+                transform: rotate(45deg);
+
+            }
+
+            &:hover{
+                background: $darkcolor;
+                color:$lightcolor;
+                box-shadow: $shadow;
+                
+                span{
+                    background: $lightcolor;
+                }
+            }
+
+            
+        }
+
+    }
+
+}
+.btn-holder{
+    text-align: center;
+}
+%btn{
+    display: inline-block;
+    border: none;
+    font-family: $font;
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: $shadow;
+    cursor: pointer;
+}
+
+.btn-success{
+    @extend %btn;
+
+    background: $successcolor;
+    color:lighten($successcolor , 40%);
+
+    &:hover{
+        background: lighten($successcolor , 30%);
+        color:darken($successcolor , 20%);
+    }
+}
+
+.btn-danger{
+    @extend %btn;
+
+    background: $dangercolor;
+    color:lighten($dangercolor , 40%);
+
+    &:hover{
+        background: lighten($dangercolor , 30%);
+        color:darken($dangercolor , 20%);
+    }
+}
+
+@for $i from 1 through 12{
+
+    @if($i%2 == 0){
+        .col-md-#{$i}{
+            width: 8.333333% * $i;
+               /*
+    if($i%2==0){
+         .call-md-#{$i}{
+        width:8.333333% * $i;
+        zooj ro chap mikne dr main.css
+    }
+    */
+        }
+    }
+
+}

@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+  background: #35d1ec;
+}
+
+.main {
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  margin: 100px auto;
+  -webkit-box-shadow: 0 3px 15px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.main .header {
+  padding: 20px;
+  background: #257dc5;
+}
+
+.main .header h1 {
+  text-align: center;
+  color: #f1fbff;
+  font-family: "iranyekanweb", tahoma, arial;
+}
+
+.main .list {
+  list-style: none;
+  width: 300px;
+  margin: 50px auto;
+}
+
+.main .list .item {
+  background: #f1fbff;
+  padding: 15px;
+  margin-bottom: 5px;
+  color: #257dc5;
+  font-family: "iranyekanweb", tahoma, arial;
+}
+
+.main .list .item span {
+  width: 20px;
+  height: 20px;
+  background: #257dc5;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.main .list .item:hover {
+  background: #257dc5;
+  color: #f1fbff;
+  -webkit-box-shadow: 0 3px 15px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.main .list .item:hover span {
+  background: #f1fbff;
+}
+
+.btn-holder {
+  text-align: center;
+}
+
+.btn-success, .btn-danger {
+  display: inline-block;
+  border: none;
+  font-family: "iranyekanweb", tahoma, arial;
+  border-radius: 30px;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0 3px 15px -3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 15px -3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn-success {
+  background: #36da5f;
+  color: #e2fae8;
+}
+
+.btn-success:hover {
+  background: #b7f2c6;
+  color: #1a9038;
+}
+
+.btn-danger {
+  background: #f02f2f;
+  color: #feeded;
+}
+
+.btn-danger:hover {
+  background: #fabebe;
+  color: #ad0c0c;
+}
+
+.col-md-2 {
+  width: 16.66667%;
+}
+
+.col-md-4 {
+  width: 33.33333%;
+}
+
+.col-md-6 {
+  width: 50.0%;
+}
+
+.col-md-8 {
+  width: 66.66666%;
+}
+
+.col-md-10 {
+  width: 83.33333%;
+}
+
+.col-md-12 {
+  width: 100.0%;
+}
+/*# sourceMappingURL=main.css.map */

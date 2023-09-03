@@ -1,0 +1,69 @@
+header:
+khasiat header
+
+nav:
+link haro to khodesh ja mide
+
+aside: 
+mohtavaye komaki :tablighat,ozviat,oghat shaei,link haye mortabet
+
+section:
+shabihe div,vali robot be div k mirese nmidoone toosh chie vali vaghti be section mirese midone ye matlabi toosh hast
+
+article:
+matn,maghale,contect asli toshe
+
+h1-6:
+onvan ha,   h1 dar kole html bayad kolan yeki bashe dr "seo" vli h2-6 mitone chnd bar tekrar she.
+
+time:tarikh,zaman enteshar
+
+figure:
+tag image
+*hamishe img ro ba "alt" bzar:  alt:braye tozihe img vli age tozih ndri "alt" ro khali bzar.
+*alt vse karbar dide nmishe*
+
+figcaption:
+toozih img zire acs dar figure k vase karbar dide mishe
+
+footer:chiz haei k be article marbote:nevisande,eshtrak gozariha
+
+video
+audio
+---------------------------------------------------------------------------------
+meta tags:az dide karbar makhfie:
+
+viewport:
+responsive braye mobile(age nbshe res dr mobile nshoon dade nmishe)hata age resp nkrdi bayad bzarish
+
+description:
+tozihe kholase az  sitet br midare(130-140char mitone dshte bshe)
+
+keyword:
+kalamate kelidi
+
+og:title
+og:site-name
+og:description
+hmoonaro inja cope mikni
+
+og:image:
+acse/safhe marboot be braye link
+
+http-equive:zabane site: farsi
+
+author:nevisande site
+
+robots: moshakhas kni k robot site ro *index* kni ya na. *follow*:age index shod tamam link ha dr site hst ro baz mikne.
+
+age index nshe minevisi:noindex
+age follow nshe minevisi:nofollow
+-------------------------------------------------------------------------
+links:
+link rel=shortcut:
+acsi k bala braye search miad 
+*bayad pasvand *ico* bzni*
+
+link rel=apple-touch-icon:
+iconi ke vaghti roye safhe save mikni 
+
